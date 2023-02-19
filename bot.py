@@ -20,7 +20,7 @@ async def cmd_start(message: types.Message):
 
 @dp.message_handler(commands='help')
 async def cmd_help(message: types.Message):
-    await bot.send_message(chat_id=message.chat.id, text="Я здесь, чтобы помочь вам с вашими вопросами. Просто напишите свои вопросы, и я сделаю все возможное, чтобы дать вам ответ.")
+    await bot.send_message(chat_id=message.chat.id, text="Я здесь, чтобы помочь вам с вашими вопросами. Просто напишите свои вопросы, и я сделаю все возможное, чтобы ответить.")
 
 @dp.message_handler(content_types=['text'])
 async def handle_text(message: types.Message):
