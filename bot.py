@@ -22,5 +22,19 @@ async def cmd_start(message: types.Message):
 async def cmd_help(message: types.Message):
     await bot.send_message(chat_id=message.chat.id, text="Я здесь, чтобы помочь вам с вашими вопросами. Просто напишите свои вопросы, и я сделаю все возможное, чтобы дать вам ответ.")
 
+@dp.message_handler(content_types=['text'])
+async def handle_text(message: types.Message):
+    prompt = message.text
+    response = openai.Completion.create(
+        engine="text-davinci-003",
+        prompt=prompt,
+        max_tokens=1024,
+        n=1,
+        stop=None,
+        temperature=0.5,
+    )
+    reply = response["choices"][0]["text"]
+    await bot.send_message(chat_id=message.chat.id, text=reply)
+
 if __name__ == '__main__':
     executor.start_polling(dp, skip_updates=True)
