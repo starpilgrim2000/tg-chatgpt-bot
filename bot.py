@@ -1,4 +1,3 @@
-'''
 import openai
 import logging
 from aiogram import Bot, Dispatcher, executor, types
@@ -32,7 +31,7 @@ async def handle_text(message: types.Message):
     await bot.send_message(chat_id=message.chat.id, text=reply)
 
 if __name__ == '__main__':
-    executor.start_polling(dp, skip_updates=True)'''
+    executor.start_polling(dp, skip_updates=True)
 
 
 
@@ -46,7 +45,7 @@ if __name__ == '__main__':
 
 
 
-
+'''
 
 import logging
 from aiogram import Bot, Dispatcher, types, executor
@@ -99,4 +98,4 @@ async def handle_text(message: types.Message):
 
 
 if __name__ == '__main__':
-    executor.start_polling(dp, skip_updates=True)
+    executor.start_polling(dp, skip_updates=True)'''
