@@ -1,4 +1,4 @@
-
+'''
 import openai
 import logging
 from aiogram import Bot, Dispatcher, executor, types
@@ -6,8 +6,6 @@ from aiogram import Bot, Dispatcher, executor, types
 API_TOKEN = '6099519998:AAGAwIe41-Vuk4XnKLkMt64iEuyiOyB7gj4'
 openai.api_key = "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"
 
-
-# Initialize bot and dispatcher
 bot = Bot(token=API_TOKEN)
 dp = Dispatcher(bot)
 
@@ -34,7 +32,7 @@ async def handle_text(message: types.Message):
     await bot.send_message(chat_id=message.chat.id, text=reply)
 
 if __name__ == '__main__':
-    executor.start_polling(dp, skip_updates=True)
+    executor.start_polling(dp, skip_updates=True)'''
 
 
 
@@ -56,7 +54,7 @@ from fastapi import FastAPI
 
 import openai
 
-API_TOKEN = '5875829335:AAHuK8ClfkEvcNEOv_4heTea07aCEXWs-JI'
+API_TOKEN = '6099519998:AAGAwIe41-Vuk4XnKLkMt64iEuyiOyB7gj4'
 openai.api_key = "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"
 
 app = FastAPI()
