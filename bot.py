@@ -3,7 +3,7 @@ import logging
 from aiogram import Bot, Dispatcher, executor, types
 
 API_TOKEN = '6099519998:AAGAwIe41-Vuk4XnKLkMt64iEuyiOyB7gj4'
-openai.api_key = "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"
+openai.api_key = "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"
 
 bot = Bot(token=API_TOKEN)
 dp = Dispatcher(bot)
@@ -54,7 +54,7 @@ from fastapi import FastAPI
 import openai
 
 API_TOKEN = '6099519998:AAGAwIe41-Vuk4XnKLkMt64iEuyiOyB7gj4'
-openai.api_key = "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"
+openai.api_key = "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"
 
 app = FastAPI()
 bot = Bot(token=API_TOKEN)
