@@ -5,8 +5,8 @@ from fastapi import FastAPI
 import os
 
 
-API_TOKEN = os.environ.get('OPENAI_TOKEN')
-openai.api_key = os.environ.get('OTG_TOKEN')
+API_TOKEN = os.environ.get('TG_TOKEN')
+openai.api_key = os.environ.get('OPENAI_TOKEN')
 
 app = FastAPI()
 bot = Bot(token=API_TOKEN)
