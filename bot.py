@@ -3,7 +3,7 @@ import openai
 import logging
 from aiogram import Bot, Dispatcher, executor, types
 
-API_TOKEN = '5875829335:AAHuK8ClfkEvcNEOv_4heTea07aCEXWs-JI'
+API_TOKEN = '6099519998:AAGAwIe41-Vuk4XnKLkMt64iEuyiOyB7gj4'
 openai.api_key = "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"
 
 
