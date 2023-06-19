@@ -3,7 +3,7 @@ import os
 import openai
 from aiogram import Bot, Dispatcher, executor, types
 
-# Загрузить API-токены из переменных окружения
+# Загрузить API-токены из переменных окружени
 API_TOKEN = os.environ.get('TG_TOKEN')
 openai.api_key = os.environ.get('OPENAI_TOKEN')
 
